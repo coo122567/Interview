@@ -1,7 +1,9 @@
 # CRC5/8 in three clock domain 
 ## Introduction
-
-
+- Overview: Use Verilog and Design Compiler to design 3-Clock Domain CRC-5/8 Engine from RTL to Synthesis.
+- Designed 3-Clock Domain CRC-5/8 Engine using unfolding to reduce latency by XX %.
+- 
+- reset synchronizer
 ## Simulation Result
 - Gate-level simulation result
 
