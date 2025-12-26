@@ -1,4 +1,4 @@
-# CRC5/8 in three clock domain 
+# 3-Clock Domain CRC-5/8 Engine
 ## Introduction
 - Overview: Use Verilog and Design Compiler to design 3-Clock Domain CRC-5/8 Engine from RTL to Synthesis.
 - Block diagram
