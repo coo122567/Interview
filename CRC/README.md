@@ -4,14 +4,11 @@
   
 - Optimized the architecture(Unfolding) for 46% latency reduction. 
 
-- Block diagram
-- ![crc](https://github.com/user-attachments/assets/2f11e706-047d-464f-a43f-b5fc5a16c51b)
+- Block diagram:
+  
+  <img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/70473ad4-21e4-4a42-a1c4-3d64075c66c1" />
 
 
-
-
-
- 
 - Spec. and Circuits
   - clk1 period: 14.1ns
   - clk2 period: 2.5ns
