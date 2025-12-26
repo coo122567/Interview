@@ -20,15 +20,28 @@
 - Gate-level simulation result
 
 
-- CRC with 2-unfolding 
-  <img width="100" alt="image" src="https://github.com/user-attachments/assets/62910fdb-dfb0-43d5-9de6-c715300333dd" />
-  
+
+- Architecture Optimized
+  - Base CRC step(design compiler)
+    <img width="1024" height="695" alt="image" src="https://github.com/user-attachments/assets/a19ea9a9-507e-445d-9aad-345708482868" />
+  - CRC step w/ 2-unfolding(design compiler)
+    <img width="1527" height="780" alt="image" src="https://github.com/user-attachments/assets/10dd5fa0-0ed8-42eb-9af1-04dd7d8e474f" />
+
+
+
 - CDC issue
   - slow to fast (clk1 to clk2)
+    - using pulse synchronizer to synchronize control signal.
+    - waveform: 
   - fast to slow (clk2 to clk3)
+    - using pulse synchronizer to synchronize control signal.
+    - waveform:
+
+- Reset synchronizer
+  - waveform: 
+
 
 - Comparison
-  
   <img width="600" height="140" alt="image" src="https://github.com/user-attachments/assets/199f2b2c-c687-4236-ac29-27f7e34549a1" />
 
 
