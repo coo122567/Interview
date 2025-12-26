@@ -1,23 +1,35 @@
-# 3-Clock Domain CRC-5/8 Engine
+# 3-Clock-Domain CRC-5/CRC-8 Engine
 ## Introduction
-- Overview: Use Verilog and Design Compiler to design 3-Clock Domain CRC-5/8 Engine from RTL to Synthesis.
+- Overview: Designed a 3-Clock-Domain CRC-5/CRC-8 Engine in Verilog and synthesized it with Design Compiler, with SpyGlass Lint/CDC check and Formality logic equivalence checking.
+  
+- Optimized the architecture(Unfolding) for 46% latency reduction. 
+
 - Block diagram
-  <img width="2409" height="1289" alt="image" src="https://github.com/user-attachments/assets/5f2295af-5156-47c2-9742-55f74ded2b84" />
+- ![crc](https://github.com/user-attachments/assets/2f11e706-047d-464f-a43f-b5fc5a16c51b)
+
+
+
+
+
  
-- Designed 3-Clock Domain CRC-5/8 Engine by verilog and using unfolding to reduce latency by XX %.
-- Spec. and external circuits
-  1. clk1: 14.1ns
-  2. clk2: 2.5ns
-  3. clk3: 2.7ns
-  4. message: 60-bit
-  5. Pulse synchronizer for control singal in_valid & done_en synchornize 
-  6. reset synchronizer
+- Spec. and Circuits
+  - clk1 period: 14.1ns
+  - clk2 period: 2.5ns
+  - clk3 period: 2.7ns
+  - CRC-5/CRC-8 engine: CRC generation (encoding) and CRC checking (verification).  
+  - Pulse synchronizer: Synchronizes control pulse signals across clock domains(clk1->clk2, clk2->clk3).
+  - Reset synchronizer: Reset with asynchronous assertion and synchronous de-assertion.
 
 ## Simulation Result
 - Gate-level simulation result
 
+
 - CRC with 2-unfolding 
   <img width="100" alt="image" src="https://github.com/user-attachments/assets/62910fdb-dfb0-43d5-9de6-c715300333dd" />
+  
+- CDC issue
+  - slow to fast (clk1 to clk2)
+  - fast to slow (clk2 to clk3)
 
 - Comparison
   
