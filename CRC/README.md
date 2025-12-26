@@ -10,9 +10,8 @@
 
 
 - Spec. and Circuits
-  - clk1 period: 14.1ns
-  - clk2 period: 2.5ns
-  - clk3 period: 2.7ns
+  - Clock periods: clk1 = 14.1ns, clk2 = 2.5ns, clk3 = 2.7ns
+  - Clock-domain roles: clk1 (input), clk2 (CRC compute), clk3 (output)
   - CRC-5/CRC-8 engine: CRC generation (encoding) and CRC checking (verification).  
   - Pulse synchronizer: Synchronizes control pulse signals across clock domains(clk1->clk2, clk2->clk3).
   - Reset synchronizer: Reset with asynchronous assertion and synchronous de-assertion.
