@@ -1,0 +1,2 @@
+instance {testbed.i_top.i_clk_2_module.i_cdc_sync2_clk2.q0_reg} {noTiming};
+instance {testbed.i_top.i_clk_3_module.i_cdc_sync2_clk3.q0_reg} {noTiming};
