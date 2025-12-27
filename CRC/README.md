@@ -7,8 +7,7 @@
 
 ## Introduction
 Designed a 3-Clock-Domain CRC-5/CRC-8 Engine in Verilog and synthesized it with Design Compiler, with SpyGlass Lint/CDC check and Formality logic equivalence checking.
-  
-- Optimized the architecture(Unfolding-2) for 46% latency reduction. 
+Optimized the architecture(Unfolding-2) for 46% latency reduction. 
 
 ### Block diagram
   
