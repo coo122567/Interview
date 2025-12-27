@@ -1,8 +1,8 @@
 # 3-Clock-Domain CRC-5/CRC-8 Engine
 
 ## Highlights
-- 3-clock-domain CRC-5/CRC-8 engine: clk1 (input) / clk2 (CRC-5/CRC-8 compute) / clk3 (output)
-- Architecture optimization (Unfolding-2) achieves 46% latency reduction
+- 3-clock-domain CRC-5/CRC-8 engine: clk1 (input) / clk2 (CRC-5/CRC-8 compute) / clk3 (output).
+- Architecture optimization (Unfolding-2) achieves 46% latency reduction.
 - Verified by RTL & Gate-Level simulation, SpyGlass Lint/CDC (0 warnings/errors), and Formality LEC (RTL vs. Netlist) PASS.
 
 ## Introduction
