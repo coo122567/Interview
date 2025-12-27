@@ -8,14 +8,14 @@
 ## Introduction
 Designed a 3-Clock-Domain CRC-5/CRC-8 Engine in Verilog and synthesized it with Design Compiler, with SpyGlass Lint/CDC check and Formality logic equivalence checking.
   
-- Optimized the architecture(Unfolding) for 46% latency reduction. 
+- Optimized the architecture(Unfolding-2) for 46% latency reduction. 
 
-- Block diagram:
+### Block diagram
   
   <img width="800" alt="image" src="https://github.com/user-attachments/assets/70473ad4-21e4-4a42-a1c4-3d64075c66c1" />
 
 
-- Specifications
+### Specifications
   - Clock periods: clk1 = 14.1ns, clk2 = 2.5ns, clk3 = 2.7ns
   - Clock-domain roles: clk1 (input), clk2 (CRC compute), clk3 (output)
   - Functions: CRC generation (encoding) and CRC checking (verification).  
@@ -37,33 +37,38 @@ Designed a 3-Clock-Domain CRC-5/CRC-8 Engine in Verilog and synthesized it with 
 
 
 - CDC Strategy
-  - Slow to Fast (clk1 -> clk2)
-    - Using pulse synchronizer to synchronize control signal.
-    - Waveform: <img width="1200" alt="image" src="https://github.com/user-attachments/assets/71f960f8-8d95-492e-b6c5-313bd0fb0649" />
+  - Slow -> Fast (clk1 -> clk2)
+    - Using a pulse synchronizer to synchronize control signal.
+    - Waveform:
+      
+      <img width="1200" alt="image" src="https://github.com/user-attachments/assets/71f960f8-8d95-492e-b6c5-313bd0fb0649" />
 
-  - Fast to Slow (clk2 -> clk3)
-    - Using pulse synchronizer to synchronize control signal.
-    - Waveform:<img width="1200" alt="image" src="https://github.com/user-attachments/assets/62068664-6479-42f4-bcc4-2812fdb9783e" />
+  - Fast -> Slow (clk2 -> clk3)
+    - Using a pulse synchronizer to synchronize control signal.
+    - Waveform:
+      <img width="1200" alt="image" src="https://github.com/user-attachments/assets/62068664-6479-42f4-bcc4-2812fdb9783e" />
 
 
 - Reset synchronizer
-  - waveform: <img width="1200" alt="image" src="https://github.com/user-attachments/assets/c38338ef-16cf-4b63-9acf-5cbbb24c04fe" />
+  - waveform:
+    <img width="1200" alt="image" src="https://github.com/user-attachments/assets/c38338ef-16cf-4b63-9acf-5cbbb24c04fe" />
 
 
-- SpyGlass results
+### SpyGlass results
   - CDC check: 0 warnings/errors
     
     <img width="700" alt="image" src="https://github.com/user-attachments/assets/94da686a-1c05-49e2-9dad-27e78e5c7929" />
+    
   - Lint check: 0 warnings/errors
     
     <img width="700" alt="image" src="https://github.com/user-attachments/assets/ea3f8a44-7612-42af-9140-953577602097" />
     
-- Formality result
+### Formality result
   - RTL vs. Netlist LEC(Logic Equivalence Checking): PASS
     <img width="700" alt="image" src="https://github.com/user-attachments/assets/db8337bc-471e-4987-8af9-3e714fd07b1d" />
 
 
-- Comparison
+### Comparison
   - Latency definition: `in_valid` asserted → `out_valid` asserted (measured in **clk3 cycles**).
   <img width="600" alt="image" src="https://github.com/user-attachments/assets/199f2b2c-c687-4236-ac29-27f7e34549a1" />
 
