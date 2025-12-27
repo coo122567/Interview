@@ -1,0 +1,22 @@
+ 
+****************************************
+Report : clocks
+Design : top
+Version: R-2020.09-SP5
+Date   : Sat Dec 27 16:36:38 2025
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk1            14.10   {0 7.05}            d         {clk_1}
+clk2             2.50   {0 1.25}            d         {clk_2}
+clk3             2.70   {0 1.35}            d         {clk_3}
+--------------------------------------------------------------------------------
+1

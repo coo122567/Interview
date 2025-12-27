@@ -1,0 +1,345 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : top
+Version: R-2020.09-SP5
+Date   : Sat Dec 27 16:36:37 2025
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: in_valid (input port clocked by clk1)
+  Endpoint: i_clk_1_module/clk1_message_reg[2]
+            (rising edge-triggered flip-flop clocked by clk1)
+  Path Group: clk1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk1 (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                   12.05      12.05 r
+  in_valid (in)                                           0.00      12.05 r
+  i_clk_1_module/in_valid (clk_1_module)                  0.00      12.05 r
+  i_clk_1_module/U77/Y (INVX1)                            0.12      12.17 f
+  i_clk_1_module/U47/Y (INVX1)                            0.13      12.31 r
+  i_clk_1_module/U32/Y (INVX1)                            0.06      12.36 f
+  i_clk_1_module/U31/Y (INVX1)                            0.11      12.47 r
+  i_clk_1_module/U2/Y (INVX1)                             0.27      12.74 f
+  i_clk_1_module/U58/Y (AOI22X1)                          0.23      12.97 r
+  i_clk_1_module/U57/Y (INVX1)                            0.05      13.02 f
+  i_clk_1_module/clk1_message_reg[2]/D (DFFRHQX1)         0.00      13.02 f
+  data arrival time                                                 13.02
+
+  clock clk1 (rise edge)                                 14.10      14.10
+  clock network delay (ideal)                             0.00      14.10
+  clock uncertainty                                      -0.10      14.00
+  i_clk_1_module/clk1_message_reg[2]/CK (DFFRHQX1)        0.00      14.00 r
+  library setup time                                     -0.35      13.65
+  data required time                                                13.65
+  --------------------------------------------------------------------------
+  data required time                                                13.65
+  data arrival time                                                -13.02
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.63
+
+
+  Startpoint: in_valid (input port clocked by clk1)
+  Endpoint: i_clk_1_module/clk1_message_reg[1]
+            (rising edge-triggered flip-flop clocked by clk1)
+  Path Group: clk1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk1 (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                   12.05      12.05 r
+  in_valid (in)                                           0.00      12.05 r
+  i_clk_1_module/in_valid (clk_1_module)                  0.00      12.05 r
+  i_clk_1_module/U77/Y (INVX1)                            0.12      12.17 f
+  i_clk_1_module/U47/Y (INVX1)                            0.13      12.31 r
+  i_clk_1_module/U32/Y (INVX1)                            0.06      12.36 f
+  i_clk_1_module/U31/Y (INVX1)                            0.11      12.47 r
+  i_clk_1_module/U2/Y (INVX1)                             0.27      12.74 f
+  i_clk_1_module/U56/Y (AOI22X1)                          0.23      12.97 r
+  i_clk_1_module/U55/Y (INVX1)                            0.05      13.02 f
+  i_clk_1_module/clk1_message_reg[1]/D (DFFRHQX1)         0.00      13.02 f
+  data arrival time                                                 13.02
+
+  clock clk1 (rise edge)                                 14.10      14.10
+  clock network delay (ideal)                             0.00      14.10
+  clock uncertainty                                      -0.10      14.00
+  i_clk_1_module/clk1_message_reg[1]/CK (DFFRHQX1)        0.00      14.00 r
+  library setup time                                     -0.35      13.65
+  data required time                                                13.65
+  --------------------------------------------------------------------------
+  data required time                                                13.65
+  data arrival time                                                -13.02
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.63
+
+
+  Startpoint: in_valid (input port clocked by clk1)
+  Endpoint: i_clk_1_module/clk1_message_reg[0]
+            (rising edge-triggered flip-flop clocked by clk1)
+  Path Group: clk1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk1 (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                   12.05      12.05 r
+  in_valid (in)                                           0.00      12.05 r
+  i_clk_1_module/in_valid (clk_1_module)                  0.00      12.05 r
+  i_clk_1_module/U77/Y (INVX1)                            0.12      12.17 f
+  i_clk_1_module/U47/Y (INVX1)                            0.13      12.31 r
+  i_clk_1_module/U32/Y (INVX1)                            0.06      12.36 f
+  i_clk_1_module/U31/Y (INVX1)                            0.11      12.47 r
+  i_clk_1_module/U2/Y (INVX1)                             0.27      12.74 f
+  i_clk_1_module/U54/Y (AOI22X1)                          0.23      12.97 r
+  i_clk_1_module/U53/Y (INVX1)                            0.05      13.02 f
+  i_clk_1_module/clk1_message_reg[0]/D (DFFRHQX1)         0.00      13.02 f
+  data arrival time                                                 13.02
+
+  clock clk1 (rise edge)                                 14.10      14.10
+  clock network delay (ideal)                             0.00      14.10
+  clock uncertainty                                      -0.10      14.00
+  i_clk_1_module/clk1_message_reg[0]/CK (DFFRHQX1)        0.00      14.00 r
+  library setup time                                     -0.35      13.65
+  data required time                                                13.65
+  --------------------------------------------------------------------------
+  data required time                                                13.65
+  data arrival time                                                -13.02
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.63
+
+
+  Startpoint: i_clk_2_module/clk2_CRC_reg
+              (rising edge-triggered flip-flop clocked by clk2)
+  Endpoint: i_clk_2_module/clk2_out_reg[7]
+            (rising edge-triggered flip-flop clocked by clk2)
+  Path Group: clk2
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk2 (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  i_clk_2_module/clk2_CRC_reg/CK (DFFRHQX4)               0.00       0.00 r
+  i_clk_2_module/clk2_CRC_reg/Q (DFFRHQX4)                0.36       0.36 r
+  i_clk_2_module/U14/Y (INVX1)                            0.06       0.42 f
+  i_clk_2_module/U17/Y (INVX1)                            0.25       0.67 r
+  i_clk_2_module/U535/Y (AOI31XL)                         0.10       0.78 f
+  i_clk_2_module/U207/Y (NOR3X1)                          0.17       0.94 r
+  i_clk_2_module/U206/Y (NAND4X1)                         0.13       1.08 f
+  i_clk_2_module/U11/Y (AND3X2)                           0.30       1.37 f
+  i_clk_2_module/U104/Y (INVX1)                           0.47       1.85 r
+  i_clk_2_module/U291/Y (OAI211X1)                        0.16       2.00 f
+  i_clk_2_module/clk2_out_reg[7]/D (DFFRHQX1)             0.00       2.00 f
+  data arrival time                                                  2.00
+
+  clock clk2 (rise edge)                                  2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.10       2.40
+  i_clk_2_module/clk2_out_reg[7]/CK (DFFRHQX1)            0.00       2.40 r
+  library setup time                                     -0.37       2.03
+  data required time                                                 2.03
+  --------------------------------------------------------------------------
+  data required time                                                 2.03
+  data arrival time                                                 -2.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+  Startpoint: i_clk_2_module/clk2_CRC_reg
+              (rising edge-triggered flip-flop clocked by clk2)
+  Endpoint: i_clk_2_module/clk2_out_reg[6]
+            (rising edge-triggered flip-flop clocked by clk2)
+  Path Group: clk2
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk2 (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  i_clk_2_module/clk2_CRC_reg/CK (DFFRHQX4)               0.00       0.00 r
+  i_clk_2_module/clk2_CRC_reg/Q (DFFRHQX4)                0.36       0.36 r
+  i_clk_2_module/U14/Y (INVX1)                            0.06       0.42 f
+  i_clk_2_module/U17/Y (INVX1)                            0.25       0.67 r
+  i_clk_2_module/U535/Y (AOI31XL)                         0.10       0.78 f
+  i_clk_2_module/U207/Y (NOR3X1)                          0.17       0.94 r
+  i_clk_2_module/U206/Y (NAND4X1)                         0.13       1.08 f
+  i_clk_2_module/U11/Y (AND3X2)                           0.30       1.37 f
+  i_clk_2_module/U104/Y (INVX1)                           0.47       1.85 r
+  i_clk_2_module/U289/Y (OAI211X1)                        0.16       2.00 f
+  i_clk_2_module/clk2_out_reg[6]/D (DFFRHQX1)             0.00       2.00 f
+  data arrival time                                                  2.00
+
+  clock clk2 (rise edge)                                  2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.10       2.40
+  i_clk_2_module/clk2_out_reg[6]/CK (DFFRHQX1)            0.00       2.40 r
+  library setup time                                     -0.37       2.03
+  data required time                                                 2.03
+  --------------------------------------------------------------------------
+  data required time                                                 2.03
+  data arrival time                                                 -2.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+  Startpoint: i_clk_2_module/clk2_CRC_reg
+              (rising edge-triggered flip-flop clocked by clk2)
+  Endpoint: i_clk_2_module/clk2_out_reg[5]
+            (rising edge-triggered flip-flop clocked by clk2)
+  Path Group: clk2
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk2 (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  i_clk_2_module/clk2_CRC_reg/CK (DFFRHQX4)               0.00       0.00 r
+  i_clk_2_module/clk2_CRC_reg/Q (DFFRHQX4)                0.36       0.36 r
+  i_clk_2_module/U14/Y (INVX1)                            0.06       0.42 f
+  i_clk_2_module/U17/Y (INVX1)                            0.25       0.67 r
+  i_clk_2_module/U535/Y (AOI31XL)                         0.10       0.78 f
+  i_clk_2_module/U207/Y (NOR3X1)                          0.17       0.94 r
+  i_clk_2_module/U206/Y (NAND4X1)                         0.13       1.08 f
+  i_clk_2_module/U11/Y (AND3X2)                           0.30       1.37 f
+  i_clk_2_module/U104/Y (INVX1)                           0.47       1.85 r
+  i_clk_2_module/U287/Y (OAI211X1)                        0.16       2.00 f
+  i_clk_2_module/clk2_out_reg[5]/D (DFFRHQX1)             0.00       2.00 f
+  data arrival time                                                  2.00
+
+  clock clk2 (rise edge)                                  2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.10       2.40
+  i_clk_2_module/clk2_out_reg[5]/CK (DFFRHQX1)            0.00       2.40 r
+  library setup time                                     -0.37       2.03
+  data required time                                                 2.03
+  --------------------------------------------------------------------------
+  data required time                                                 2.03
+  data arrival time                                                 -2.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+  Startpoint: i_clk_3_module/i_cdc_sync2_clk3/q1_reg
+              (rising edge-triggered flip-flop clocked by clk3)
+  Endpoint: i_clk_3_module/out_reg[16]
+            (rising edge-triggered flip-flop clocked by clk3)
+  Path Group: clk3
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk3 (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  i_clk_3_module/i_cdc_sync2_clk3/q1_reg/CK (DFFRHQX1)
+                                                          0.00       0.00 r
+  i_clk_3_module/i_cdc_sync2_clk3/q1_reg/Q (DFFRHQX1)     0.43       0.43 r
+  i_clk_3_module/i_cdc_sync2_clk3/q (cdc_sync2_0)         0.00       0.43 r
+  i_clk_3_module/i_plsgen_clk3/d (plsgen_0)               0.00       0.43 r
+  i_clk_3_module/i_plsgen_clk3/U3/Y (XOR2X1)              1.24       1.67 r
+  i_clk_3_module/i_plsgen_clk3/pls (plsgen_0)             0.00       1.67 r
+  i_clk_3_module/U4/Y (INVX1)                             0.07       1.73 f
+  i_clk_3_module/U3/Y (INVX1)                             0.43       2.17 r
+  i_clk_3_module/U17/Y (AND2X2)                           0.19       2.36 r
+  i_clk_3_module/out_reg[16]/D (DFFRHQX1)                 0.00       2.36 r
+  data arrival time                                                  2.36
+
+  clock clk3 (rise edge)                                  2.70       2.70
+  clock network delay (ideal)                             0.00       2.70
+  clock uncertainty                                      -0.10       2.60
+  i_clk_3_module/out_reg[16]/CK (DFFRHQX1)                0.00       2.60 r
+  library setup time                                     -0.21       2.39
+  data required time                                                 2.39
+  --------------------------------------------------------------------------
+  data required time                                                 2.39
+  data arrival time                                                 -2.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+  Startpoint: i_clk_3_module/i_cdc_sync2_clk3/q1_reg
+              (rising edge-triggered flip-flop clocked by clk3)
+  Endpoint: i_clk_3_module/out_reg[5]
+            (rising edge-triggered flip-flop clocked by clk3)
+  Path Group: clk3
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk3 (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  i_clk_3_module/i_cdc_sync2_clk3/q1_reg/CK (DFFRHQX1)
+                                                          0.00       0.00 r
+  i_clk_3_module/i_cdc_sync2_clk3/q1_reg/Q (DFFRHQX1)     0.43       0.43 r
+  i_clk_3_module/i_cdc_sync2_clk3/q (cdc_sync2_0)         0.00       0.43 r
+  i_clk_3_module/i_plsgen_clk3/d (plsgen_0)               0.00       0.43 r
+  i_clk_3_module/i_plsgen_clk3/U3/Y (XOR2X1)              1.24       1.67 r
+  i_clk_3_module/i_plsgen_clk3/pls (plsgen_0)             0.00       1.67 r
+  i_clk_3_module/U4/Y (INVX1)                             0.07       1.73 f
+  i_clk_3_module/U3/Y (INVX1)                             0.43       2.17 r
+  i_clk_3_module/U6/Y (AND2X2)                            0.19       2.36 r
+  i_clk_3_module/out_reg[5]/D (DFFRHQX1)                  0.00       2.36 r
+  data arrival time                                                  2.36
+
+  clock clk3 (rise edge)                                  2.70       2.70
+  clock network delay (ideal)                             0.00       2.70
+  clock uncertainty                                      -0.10       2.60
+  i_clk_3_module/out_reg[5]/CK (DFFRHQX1)                 0.00       2.60 r
+  library setup time                                     -0.21       2.39
+  data required time                                                 2.39
+  --------------------------------------------------------------------------
+  data required time                                                 2.39
+  data arrival time                                                 -2.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+  Startpoint: i_clk_3_module/i_cdc_sync2_clk3/q1_reg
+              (rising edge-triggered flip-flop clocked by clk3)
+  Endpoint: i_clk_3_module/out_reg[2]
+            (rising edge-triggered flip-flop clocked by clk3)
+  Path Group: clk3
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk3 (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  i_clk_3_module/i_cdc_sync2_clk3/q1_reg/CK (DFFRHQX1)
+                                                          0.00       0.00 r
+  i_clk_3_module/i_cdc_sync2_clk3/q1_reg/Q (DFFRHQX1)     0.43       0.43 r
+  i_clk_3_module/i_cdc_sync2_clk3/q (cdc_sync2_0)         0.00       0.43 r
+  i_clk_3_module/i_plsgen_clk3/d (plsgen_0)               0.00       0.43 r
+  i_clk_3_module/i_plsgen_clk3/U3/Y (XOR2X1)              1.24       1.67 r
+  i_clk_3_module/i_plsgen_clk3/pls (plsgen_0)             0.00       1.67 r
+  i_clk_3_module/U4/Y (INVX1)                             0.07       1.73 f
+  i_clk_3_module/U3/Y (INVX1)                             0.43       2.17 r
+  i_clk_3_module/U43/Y (AND2X2)                           0.19       2.36 r
+  i_clk_3_module/out_reg[2]/D (DFFRHQX1)                  0.00       2.36 r
+  data arrival time                                                  2.36
+
+  clock clk3 (rise edge)                                  2.70       2.70
+  clock network delay (ideal)                             0.00       2.70
+  clock uncertainty                                      -0.10       2.60
+  i_clk_3_module/out_reg[2]/CK (DFFRHQX1)                 0.00       2.60 r
+  library setup time                                     -0.21       2.39
+  data required time                                                 2.39
+  --------------------------------------------------------------------------
+  data required time                                                 2.39
+  data arrival time                                                 -2.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+1

@@ -1,0 +1,20 @@
+ 
+****************************************
+check_design summary:
+Version:     R-2020.09-SP5
+Date:        Sat Dec 27 16:34:32 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      2
+    Feedthrough (LINT-29)                                           2
+
+Cells                                                               1
+    Cells do not drive (LINT-1)                                     1
+--------------------------------------------------------------------------------
+
+Warning: In design 'clk_2_module', cell 'C1332' does not drive any nets. (LINT-1)
+Warning: In design 'crc_step', input port 'bit_in' is connected directly to output port 'rem_out[0]'. (LINT-29)
+Warning: In design 'crc_step', input port 'rem_in[2]' is connected directly to output port 'rem_out[3]'. (LINT-29)
+1
