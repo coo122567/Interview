@@ -1,0 +1,627 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : top
+Version: R-2020.09-SP5
+Date   : Thu Jan  8 16:45:21 2026
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: Wi_buf_2_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: YiWi_buf_5_reg[10]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Wi_buf_2_reg[1]/CK (DFFRHQX1)                           0.00       0.00 r
+  Wi_buf_2_reg[1]/Q (DFFRHQX1)                            0.53       0.53 r
+  U1284/Y (INVX1)                                         0.20       0.73 f
+  U2437/Y (OR2X2)                                         0.24       0.98 f
+  U1137/Y (OAI21XL)                                       0.13       1.10 r
+  U1138/Y (XOR2X1)                                        0.32       1.42 r
+  U1145/Y (INVX1)                                         0.08       1.50 f
+  U2445/Y (XOR3X2)                                        0.47       1.97 f
+  U1198/Y (INVX1)                                         0.12       2.09 r
+  U1183/Y (XOR3X2)                                        0.68       2.77 r
+  U1199/Y (INVX1)                                         0.09       2.86 f
+  U2478/Y (OR2X2)                                         0.20       3.06 f
+  U1662/Y (OAI21XL)                                       0.14       3.20 r
+  U1646/Y (OAI21XL)                                       0.13       3.33 f
+  U1645/Y (OAI2BB1X1)                                     0.14       3.47 r
+  U1707/Y (OAI21XL)                                       0.11       3.58 f
+  U1706/Y (OAI2BB1X1)                                     0.15       3.73 r
+  U1301/Y (OAI2BB1X1)                                     0.24       3.97 r
+  U1144/Y (OAI2BB1X1)                                     0.24       4.21 r
+  U1593/Y (INVX1)                                         0.07       4.27 f
+  U1592/Y (OR3XL)                                         0.39       4.67 f
+  U1276/Y (OR3XL)                                         0.41       5.07 f
+  U1644/Y (OR3XL)                                         0.37       5.45 f
+  U1136/Y (NAND2BX1)                                      0.21       5.66 f
+  U1642/Y (NAND2BX1)                                      0.20       5.86 f
+  U1705/Y (XNOR2X1)                                       0.26       6.12 r
+  div_622/a[14] (top_DW_div_uns_13)                       0.00       6.12 r
+  div_622/U35/Y (OAI21XL)                                 0.10       6.21 f
+  div_622/U34/Y (INVX1)                                   0.25       6.47 r
+  div_622/U358/Y (NOR2X1)                                 0.09       6.56 f
+  div_622/U36/Y (MXI2X1)                                  0.20       6.76 r
+  div_622/U18/Y (AND2X2)                                  0.18       6.94 r
+  div_622/U17/Y (NAND2X1)                                 0.11       7.04 f
+  div_622/U284/Y (INVX1)                                  0.25       7.29 r
+  div_622/U351/Y (MXI2X1)                                 0.26       7.55 f
+  div_622/U2/Y (INVX1)                                    0.19       7.74 r
+  div_622/U110/Y (NAND2BXL)                               0.09       7.83 f
+  div_622/U16/Y (INVX1)                                   0.12       7.96 r
+  div_622/U108/Y (AOI22XL)                                0.14       8.10 f
+  div_622/U27/Y (NAND2X1)                                 0.25       8.35 r
+  div_622/U283/Y (NOR2X1)                                 0.11       8.46 f
+  div_622/U292/Y (OAI21XL)                                0.23       8.69 r
+  div_622/U41/Y (AOI21X1)                                 0.10       8.79 f
+  div_622/U15/Y (OAI21XL)                                 0.19       8.98 r
+  div_622/U14/Y (NAND2X1)                                 0.14       9.12 f
+  div_622/U238/Y (INVX1)                                  0.22       9.34 r
+  div_622/U279/Y (MXI2X1)                                 0.26       9.60 r
+  div_622/U4/Y (INVX1)                                    0.13       9.73 f
+  div_622/U63/Y (NAND2BXL)                                0.16       9.89 r
+  div_622/U225/Y (INVX1)                                  0.10       9.99 f
+  div_622/U112/Y (AOI22XL)                                0.27      10.26 r
+  div_622/U26/Y (NAND2X1)                                 0.21      10.47 f
+  div_622/u_div/u_add_PartRem_1_4_2/A[2] (top_DW01_add_204)
+                                                          0.00      10.47 f
+  div_622/u_div/u_add_PartRem_1_4_2/U61/Y (NOR2XL)        0.25      10.72 r
+  div_622/u_div/u_add_PartRem_1_4_2/U83/Y (OAI21XL)       0.12      10.84 f
+  div_622/u_div/u_add_PartRem_1_4_2/U82/Y (AOI21X1)       0.23      11.08 r
+  div_622/u_div/u_add_PartRem_1_4_2/U54/Y (OAI21XL)       0.12      11.20 f
+  div_622/u_div/u_add_PartRem_1_4_2/U71/Y (BUFX3)         0.19      11.39 f
+  div_622/u_div/u_add_PartRem_1_4_2/CO (top_DW01_add_204)
+                                                          0.00      11.39 f
+  div_622/U237/Y (MXI2X1)                                 0.19      11.57 f
+  div_622/U6/Y (INVX1)                                    0.18      11.75 r
+  div_622/U51/Y (AND2X1)                                  0.32      12.07 r
+  div_622/U160/Y (AOI21XL)                                0.12      12.20 f
+  div_622/U31/Y (OAI2BB1X1)                               0.27      12.47 r
+  div_622/u_div/u_add_PartRem_0_3_2/A[0] (top_DW01_add_207)
+                                                          0.00      12.47 r
+  div_622/u_div/u_add_PartRem_0_3_2/U92/Y (NOR2X1)        0.09      12.56 f
+  div_622/u_div/u_add_PartRem_0_3_2/U62/Y (OAI21XL)       0.24      12.80 r
+  div_622/u_div/u_add_PartRem_0_3_2/U74/Y (AOI21XL)       0.21      13.01 f
+  div_622/u_div/u_add_PartRem_0_3_2/U65/Y (OAI21X1)       0.21      13.22 r
+  div_622/u_div/u_add_PartRem_0_3_2/U66/Y (BUFX4)         0.18      13.40 r
+  div_622/u_div/u_add_PartRem_0_3_2/CO (top_DW01_add_207)
+                                                          0.00      13.40 r
+  div_622/U7/Y (MXI2X1)                                   0.20      13.59 f
+  div_622/U222/Y (INVX1)                                  0.21      13.80 r
+  div_622/U50/Y (NAND2XL)                                 0.15      13.95 f
+  div_622/U210/Y (INVX1)                                  0.16      14.12 r
+  div_622/U356/Y (AOI22X1)                                0.09      14.20 f
+  div_622/U354/Y (OAI2BB1X1)                              0.24      14.45 r
+  div_622/u_div/u_add_PartRem_0_2_2/A[0] (top_DW01_add_210)
+                                                          0.00      14.45 r
+  div_622/u_div/u_add_PartRem_0_2_2/U89/Y (NOR2X1)        0.09      14.54 f
+  div_622/u_div/u_add_PartRem_0_2_2/U64/Y (OAI21XL)       0.26      14.79 r
+  div_622/u_div/u_add_PartRem_0_2_2/U67/Y (AOI21X1)       0.16      14.96 f
+  div_622/u_div/u_add_PartRem_0_2_2/U63/Y (OAI21XL)       0.21      15.17 r
+  div_622/u_div/u_add_PartRem_0_2_2/U62/Y (BUFX3)         0.21      15.37 r
+  div_622/u_div/u_add_PartRem_0_2_2/CO (top_DW01_add_210)
+                                                          0.00      15.37 r
+  div_622/U22/Y (MXI2X2)                                  0.20      15.57 f
+  div_622/U223/Y (INVX1)                                  0.21      15.78 r
+  div_622/U48/Y (NAND2XL)                                 0.15      15.93 f
+  div_622/U211/Y (INVX1)                                  0.16      16.09 r
+  div_622/U361/Y (AOI22X1)                                0.09      16.18 f
+  div_622/U359/Y (OAI2BB1X1)                              0.24      16.42 r
+  div_622/u_div/u_add_PartRem_0_1_2/A[0] (top_DW01_add_213)
+                                                          0.00      16.42 r
+  div_622/u_div/u_add_PartRem_0_1_2/U71/Y (NOR2XL)        0.12      16.53 f
+  div_622/u_div/u_add_PartRem_0_1_2/U65/Y (OAI21X1)       0.21      16.74 r
+  div_622/u_div/u_add_PartRem_0_1_2/U69/Y (AOI21XL)       0.19      16.93 f
+  div_622/u_div/u_add_PartRem_0_1_2/U63/Y (OAI21XL)       0.22      17.15 r
+  div_622/u_div/u_add_PartRem_0_1_2/U62/Y (BUFX3)         0.20      17.35 r
+  div_622/u_div/u_add_PartRem_0_1_2/CO (top_DW01_add_213)
+                                                          0.00      17.35 r
+  div_622/U13/Y (MXI2X1)                                  0.23      17.58 f
+  div_622/U224/Y (INVX1)                                  0.20      17.77 r
+  div_622/U214/Y (NAND2BX1)                               0.07      17.85 f
+  div_622/U24/Y (INVX1)                                   0.19      18.04 r
+  div_622/U170/Y (AOI22XL)                                0.15      18.19 f
+  div_622/U167/Y (OAI211XL)                               0.34      18.54 r
+  div_622/u_div/u_add_PartRem_0_0_2/A[3] (top_DW01_add_216)
+                                                          0.00      18.54 r
+  div_622/u_div/u_add_PartRem_0_0_2/U74/Y (NOR2XL)        0.10      18.63 f
+  div_622/u_div/u_add_PartRem_0_0_2/U73/Y (NOR2XL)        0.16      18.80 r
+  div_622/u_div/u_add_PartRem_0_0_2/U78/Y (NAND2X1)       0.07      18.87 f
+  div_622/u_div/u_add_PartRem_0_0_2/U63/Y (OAI21XL)       0.29      19.16 r
+  div_622/u_div/u_add_PartRem_0_0_2/CO (top_DW01_add_216)
+                                                          0.00      19.16 r
+  div_622/U64/Y (MX2X1)                                   0.29      19.45 f
+  div_622/quotient[0] (top_DW_div_uns_13)                 0.00      19.45 f
+  U1556/Y (BUFX3)                                         0.25      19.70 f
+  sub_700/A[0] (top_DW01_sub_3)                           0.00      19.70 f
+  sub_700/U1/Y (INVXL)                                    0.11      19.81 r
+  sub_700/U2/Y (NAND2BX1)                                 0.08      19.89 f
+  sub_700/U2_1/CO (ADDFX2)                                0.34      20.23 f
+  sub_700/U2_2/CO (CMPR32X1)                              0.33      20.56 f
+  sub_700/U2_3/CO (CMPR32X1)                              0.33      20.89 f
+  sub_700/U2_4/CO (CMPR32X1)                              0.33      21.22 f
+  sub_700/U2_5/CO (ADDFXL)                                0.34      21.56 f
+  sub_700/U2_6/CO (CMPR32X1)                              0.35      21.90 f
+  sub_700/U2_7/Y (XOR3X2)                                 0.26      22.17 r
+  sub_700/DIFF[7] (top_DW01_sub_3)                        0.00      22.17 r
+  U1256/Y (MX2X1)                                         0.24      22.40 r
+  mult_726/b[7] (top_DW_mult_uns_12)                      0.00      22.40 r
+  mult_726/U117/Y (INVX1)                                 0.14      22.54 f
+  mult_726/U121/Y (NOR2X1)                                0.19      22.72 r
+  mult_726/U19/S (CMPR42X1)                               0.94      23.66 f
+  mult_726/U72/S (CMPR32X1)                               0.51      24.17 f
+  mult_726/product[8] (top_DW_mult_uns_12)                0.00      24.17 f
+  add_735/A[8] (top_DW01_add_42_DW01_add_22)              0.00      24.17 f
+  add_735/U1_8/CO (ADDFX2)                                0.51      24.68 f
+  add_735/U1_9/CO (CMPR32X1)                              0.33      25.01 f
+  add_735/U1_10/CO (ADDFX2)                               0.35      25.36 f
+  add_735/U1_11/CO (ADDFX2)                               0.35      25.70 f
+  add_735/U1_12/CO (ADDFX2)                               0.35      26.05 f
+  add_735/U1_13/CO (ADDFX2)                               0.35      26.40 f
+  add_735/U1_14/CO (CMPR32X1)                             0.33      26.73 f
+  add_735/U1_15/CO (ADDFX2)                               0.36      27.09 f
+  add_735/SUM[16] (top_DW01_add_42_DW01_add_22)           0.00      27.09 f
+  gte_776/B[36] (top_DW_cmp_2)                            0.00      27.09 f
+  gte_776/U245/Y (NAND2BX1)                               0.23      27.32 f
+  gte_776/U212/Y (AOI32X1)                                0.30      27.62 r
+  gte_776/U207/Y (INVX1)                                  0.07      27.69 f
+  gte_776/U244/Y (AOI31X1)                                0.16      27.85 r
+  gte_776/U192/Y (AOI31XL)                                0.08      27.92 f
+  gte_776/U187/Y (INVX1)                                  0.47      28.40 r
+  gte_776/GE_LT_GT_LE (top_DW_cmp_2)                      0.00      28.40 r
+  U1648/Y (INVX1)                                         0.14      28.53 f
+  U1595/Y (INVX1)                                         0.61      29.14 r
+  U1937/Y (MX2X1)                                         0.41      29.55 f
+  gte_787/B[17] (top_DW_cmp_J3_0)                         0.00      29.55 f
+  gte_787/U318/Y (NOR2X1)                                 0.16      29.71 r
+  gte_787/U308/Y (OAI21XL)                                0.11      29.82 f
+  gte_787/U306/Y (AOI21X1)                                0.17      29.99 r
+  gte_787/U195/Y (OAI21XL)                                0.13      30.12 f
+  gte_787/U300/Y (AOI21X1)                                0.15      30.27 r
+  gte_787/U190/Y (OAI21XL)                                0.12      30.39 f
+  gte_787/U191/Y (AOI21X1)                                0.30      30.70 r
+  gte_787/GE_LT_GT_LE (top_DW_cmp_J3_0)                   0.00      30.70 r
+  U1147/Y (INVX1)                                         0.07      30.76 f
+  U1357/Y (NOR3XL)                                        0.28      31.04 r
+  U2430/Y (OR2X2)                                         0.20      31.24 r
+  U1703/Y (OR3XL)                                         0.21      31.45 r
+  U2433/Y (OR2X2)                                         0.36      31.81 r
+  U1157/Y (INVX1)                                         0.09      31.90 f
+  U1554/Y (INVX1)                                         0.39      32.30 r
+  U1768/Y (OAI222XL)                                      0.26      32.56 f
+  YiWi_buf_5_reg[10]/D (DFFRHQX1)                         0.00      32.56 f
+  data arrival time                                                 32.56
+
+  clock clk (rise edge)                                  33.00      33.00
+  clock network delay (ideal)                             0.00      33.00
+  YiWi_buf_5_reg[10]/CK (DFFRHQX1)                        0.00      33.00 r
+  library setup time                                     -0.39      32.61
+  data required time                                                32.61
+  --------------------------------------------------------------------------
+  data required time                                                32.61
+  data arrival time                                                -32.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Wi_buf_2_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: YiWi_buf_5_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Wi_buf_2_reg[1]/CK (DFFRHQX1)                           0.00       0.00 r
+  Wi_buf_2_reg[1]/Q (DFFRHQX1)                            0.53       0.53 r
+  U1284/Y (INVX1)                                         0.20       0.73 f
+  U2437/Y (OR2X2)                                         0.24       0.98 f
+  U1137/Y (OAI21XL)                                       0.13       1.10 r
+  U1138/Y (XOR2X1)                                        0.32       1.42 r
+  U1145/Y (INVX1)                                         0.08       1.50 f
+  U2445/Y (XOR3X2)                                        0.47       1.97 f
+  U1198/Y (INVX1)                                         0.12       2.09 r
+  U1183/Y (XOR3X2)                                        0.68       2.77 r
+  U1199/Y (INVX1)                                         0.09       2.86 f
+  U2478/Y (OR2X2)                                         0.20       3.06 f
+  U1662/Y (OAI21XL)                                       0.14       3.20 r
+  U1646/Y (OAI21XL)                                       0.13       3.33 f
+  U1645/Y (OAI2BB1X1)                                     0.14       3.47 r
+  U1707/Y (OAI21XL)                                       0.11       3.58 f
+  U1706/Y (OAI2BB1X1)                                     0.15       3.73 r
+  U1301/Y (OAI2BB1X1)                                     0.24       3.97 r
+  U1144/Y (OAI2BB1X1)                                     0.24       4.21 r
+  U1593/Y (INVX1)                                         0.07       4.27 f
+  U1592/Y (OR3XL)                                         0.39       4.67 f
+  U1276/Y (OR3XL)                                         0.41       5.07 f
+  U1644/Y (OR3XL)                                         0.37       5.45 f
+  U1136/Y (NAND2BX1)                                      0.21       5.66 f
+  U1642/Y (NAND2BX1)                                      0.20       5.86 f
+  U1705/Y (XNOR2X1)                                       0.26       6.12 r
+  div_622/a[14] (top_DW_div_uns_13)                       0.00       6.12 r
+  div_622/U35/Y (OAI21XL)                                 0.10       6.21 f
+  div_622/U34/Y (INVX1)                                   0.25       6.47 r
+  div_622/U358/Y (NOR2X1)                                 0.09       6.56 f
+  div_622/U36/Y (MXI2X1)                                  0.20       6.76 r
+  div_622/U18/Y (AND2X2)                                  0.18       6.94 r
+  div_622/U17/Y (NAND2X1)                                 0.11       7.04 f
+  div_622/U284/Y (INVX1)                                  0.25       7.29 r
+  div_622/U351/Y (MXI2X1)                                 0.26       7.55 f
+  div_622/U2/Y (INVX1)                                    0.19       7.74 r
+  div_622/U110/Y (NAND2BXL)                               0.09       7.83 f
+  div_622/U16/Y (INVX1)                                   0.12       7.96 r
+  div_622/U108/Y (AOI22XL)                                0.14       8.10 f
+  div_622/U27/Y (NAND2X1)                                 0.25       8.35 r
+  div_622/U283/Y (NOR2X1)                                 0.11       8.46 f
+  div_622/U292/Y (OAI21XL)                                0.23       8.69 r
+  div_622/U41/Y (AOI21X1)                                 0.10       8.79 f
+  div_622/U15/Y (OAI21XL)                                 0.19       8.98 r
+  div_622/U14/Y (NAND2X1)                                 0.14       9.12 f
+  div_622/U238/Y (INVX1)                                  0.22       9.34 r
+  div_622/U279/Y (MXI2X1)                                 0.26       9.60 r
+  div_622/U4/Y (INVX1)                                    0.13       9.73 f
+  div_622/U63/Y (NAND2BXL)                                0.16       9.89 r
+  div_622/U225/Y (INVX1)                                  0.10       9.99 f
+  div_622/U112/Y (AOI22XL)                                0.27      10.26 r
+  div_622/U26/Y (NAND2X1)                                 0.21      10.47 f
+  div_622/u_div/u_add_PartRem_1_4_2/A[2] (top_DW01_add_204)
+                                                          0.00      10.47 f
+  div_622/u_div/u_add_PartRem_1_4_2/U61/Y (NOR2XL)        0.25      10.72 r
+  div_622/u_div/u_add_PartRem_1_4_2/U83/Y (OAI21XL)       0.12      10.84 f
+  div_622/u_div/u_add_PartRem_1_4_2/U82/Y (AOI21X1)       0.23      11.08 r
+  div_622/u_div/u_add_PartRem_1_4_2/U54/Y (OAI21XL)       0.12      11.20 f
+  div_622/u_div/u_add_PartRem_1_4_2/U71/Y (BUFX3)         0.19      11.39 f
+  div_622/u_div/u_add_PartRem_1_4_2/CO (top_DW01_add_204)
+                                                          0.00      11.39 f
+  div_622/U237/Y (MXI2X1)                                 0.19      11.57 f
+  div_622/U6/Y (INVX1)                                    0.18      11.75 r
+  div_622/U51/Y (AND2X1)                                  0.32      12.07 r
+  div_622/U160/Y (AOI21XL)                                0.12      12.20 f
+  div_622/U31/Y (OAI2BB1X1)                               0.27      12.47 r
+  div_622/u_div/u_add_PartRem_0_3_2/A[0] (top_DW01_add_207)
+                                                          0.00      12.47 r
+  div_622/u_div/u_add_PartRem_0_3_2/U92/Y (NOR2X1)        0.09      12.56 f
+  div_622/u_div/u_add_PartRem_0_3_2/U62/Y (OAI21XL)       0.24      12.80 r
+  div_622/u_div/u_add_PartRem_0_3_2/U74/Y (AOI21XL)       0.21      13.01 f
+  div_622/u_div/u_add_PartRem_0_3_2/U65/Y (OAI21X1)       0.21      13.22 r
+  div_622/u_div/u_add_PartRem_0_3_2/U66/Y (BUFX4)         0.18      13.40 r
+  div_622/u_div/u_add_PartRem_0_3_2/CO (top_DW01_add_207)
+                                                          0.00      13.40 r
+  div_622/U7/Y (MXI2X1)                                   0.20      13.59 f
+  div_622/U222/Y (INVX1)                                  0.21      13.80 r
+  div_622/U50/Y (NAND2XL)                                 0.15      13.95 f
+  div_622/U210/Y (INVX1)                                  0.16      14.12 r
+  div_622/U356/Y (AOI22X1)                                0.09      14.20 f
+  div_622/U354/Y (OAI2BB1X1)                              0.24      14.45 r
+  div_622/u_div/u_add_PartRem_0_2_2/A[0] (top_DW01_add_210)
+                                                          0.00      14.45 r
+  div_622/u_div/u_add_PartRem_0_2_2/U89/Y (NOR2X1)        0.09      14.54 f
+  div_622/u_div/u_add_PartRem_0_2_2/U64/Y (OAI21XL)       0.26      14.79 r
+  div_622/u_div/u_add_PartRem_0_2_2/U67/Y (AOI21X1)       0.16      14.96 f
+  div_622/u_div/u_add_PartRem_0_2_2/U63/Y (OAI21XL)       0.21      15.17 r
+  div_622/u_div/u_add_PartRem_0_2_2/U62/Y (BUFX3)         0.21      15.37 r
+  div_622/u_div/u_add_PartRem_0_2_2/CO (top_DW01_add_210)
+                                                          0.00      15.37 r
+  div_622/U22/Y (MXI2X2)                                  0.20      15.57 f
+  div_622/U223/Y (INVX1)                                  0.21      15.78 r
+  div_622/U48/Y (NAND2XL)                                 0.15      15.93 f
+  div_622/U211/Y (INVX1)                                  0.16      16.09 r
+  div_622/U361/Y (AOI22X1)                                0.09      16.18 f
+  div_622/U359/Y (OAI2BB1X1)                              0.24      16.42 r
+  div_622/u_div/u_add_PartRem_0_1_2/A[0] (top_DW01_add_213)
+                                                          0.00      16.42 r
+  div_622/u_div/u_add_PartRem_0_1_2/U71/Y (NOR2XL)        0.12      16.53 f
+  div_622/u_div/u_add_PartRem_0_1_2/U65/Y (OAI21X1)       0.21      16.74 r
+  div_622/u_div/u_add_PartRem_0_1_2/U69/Y (AOI21XL)       0.19      16.93 f
+  div_622/u_div/u_add_PartRem_0_1_2/U63/Y (OAI21XL)       0.22      17.15 r
+  div_622/u_div/u_add_PartRem_0_1_2/U62/Y (BUFX3)         0.20      17.35 r
+  div_622/u_div/u_add_PartRem_0_1_2/CO (top_DW01_add_213)
+                                                          0.00      17.35 r
+  div_622/U13/Y (MXI2X1)                                  0.23      17.58 f
+  div_622/U224/Y (INVX1)                                  0.20      17.77 r
+  div_622/U214/Y (NAND2BX1)                               0.07      17.85 f
+  div_622/U24/Y (INVX1)                                   0.19      18.04 r
+  div_622/U170/Y (AOI22XL)                                0.15      18.19 f
+  div_622/U167/Y (OAI211XL)                               0.34      18.54 r
+  div_622/u_div/u_add_PartRem_0_0_2/A[3] (top_DW01_add_216)
+                                                          0.00      18.54 r
+  div_622/u_div/u_add_PartRem_0_0_2/U74/Y (NOR2XL)        0.10      18.63 f
+  div_622/u_div/u_add_PartRem_0_0_2/U73/Y (NOR2XL)        0.16      18.80 r
+  div_622/u_div/u_add_PartRem_0_0_2/U78/Y (NAND2X1)       0.07      18.87 f
+  div_622/u_div/u_add_PartRem_0_0_2/U63/Y (OAI21XL)       0.29      19.16 r
+  div_622/u_div/u_add_PartRem_0_0_2/CO (top_DW01_add_216)
+                                                          0.00      19.16 r
+  div_622/U64/Y (MX2X1)                                   0.29      19.45 f
+  div_622/quotient[0] (top_DW_div_uns_13)                 0.00      19.45 f
+  U1556/Y (BUFX3)                                         0.25      19.70 f
+  sub_700/A[0] (top_DW01_sub_3)                           0.00      19.70 f
+  sub_700/U1/Y (INVXL)                                    0.11      19.81 r
+  sub_700/U2/Y (NAND2BX1)                                 0.08      19.89 f
+  sub_700/U2_1/CO (ADDFX2)                                0.34      20.23 f
+  sub_700/U2_2/CO (CMPR32X1)                              0.33      20.56 f
+  sub_700/U2_3/CO (CMPR32X1)                              0.33      20.89 f
+  sub_700/U2_4/CO (CMPR32X1)                              0.33      21.22 f
+  sub_700/U2_5/CO (ADDFXL)                                0.34      21.56 f
+  sub_700/U2_6/CO (CMPR32X1)                              0.35      21.90 f
+  sub_700/U2_7/Y (XOR3X2)                                 0.26      22.17 r
+  sub_700/DIFF[7] (top_DW01_sub_3)                        0.00      22.17 r
+  U1256/Y (MX2X1)                                         0.24      22.40 r
+  mult_726/b[7] (top_DW_mult_uns_12)                      0.00      22.40 r
+  mult_726/U117/Y (INVX1)                                 0.14      22.54 f
+  mult_726/U121/Y (NOR2X1)                                0.19      22.72 r
+  mult_726/U19/S (CMPR42X1)                               0.94      23.66 f
+  mult_726/U72/S (CMPR32X1)                               0.51      24.17 f
+  mult_726/product[8] (top_DW_mult_uns_12)                0.00      24.17 f
+  add_735/A[8] (top_DW01_add_42_DW01_add_22)              0.00      24.17 f
+  add_735/U1_8/CO (ADDFX2)                                0.51      24.68 f
+  add_735/U1_9/CO (CMPR32X1)                              0.33      25.01 f
+  add_735/U1_10/CO (ADDFX2)                               0.35      25.36 f
+  add_735/U1_11/CO (ADDFX2)                               0.35      25.70 f
+  add_735/U1_12/CO (ADDFX2)                               0.35      26.05 f
+  add_735/U1_13/CO (ADDFX2)                               0.35      26.40 f
+  add_735/U1_14/CO (CMPR32X1)                             0.33      26.73 f
+  add_735/U1_15/CO (ADDFX2)                               0.36      27.09 f
+  add_735/SUM[16] (top_DW01_add_42_DW01_add_22)           0.00      27.09 f
+  gte_776/B[36] (top_DW_cmp_2)                            0.00      27.09 f
+  gte_776/U245/Y (NAND2BX1)                               0.23      27.32 f
+  gte_776/U212/Y (AOI32X1)                                0.30      27.62 r
+  gte_776/U207/Y (INVX1)                                  0.07      27.69 f
+  gte_776/U244/Y (AOI31X1)                                0.16      27.85 r
+  gte_776/U192/Y (AOI31XL)                                0.08      27.92 f
+  gte_776/U187/Y (INVX1)                                  0.47      28.40 r
+  gte_776/GE_LT_GT_LE (top_DW_cmp_2)                      0.00      28.40 r
+  U1648/Y (INVX1)                                         0.14      28.53 f
+  U1595/Y (INVX1)                                         0.61      29.14 r
+  U1937/Y (MX2X1)                                         0.41      29.55 f
+  gte_787/B[17] (top_DW_cmp_J3_0)                         0.00      29.55 f
+  gte_787/U318/Y (NOR2X1)                                 0.16      29.71 r
+  gte_787/U308/Y (OAI21XL)                                0.11      29.82 f
+  gte_787/U306/Y (AOI21X1)                                0.17      29.99 r
+  gte_787/U195/Y (OAI21XL)                                0.13      30.12 f
+  gte_787/U300/Y (AOI21X1)                                0.15      30.27 r
+  gte_787/U190/Y (OAI21XL)                                0.12      30.39 f
+  gte_787/U191/Y (AOI21X1)                                0.30      30.70 r
+  gte_787/GE_LT_GT_LE (top_DW_cmp_J3_0)                   0.00      30.70 r
+  U1147/Y (INVX1)                                         0.07      30.76 f
+  U1357/Y (NOR3XL)                                        0.28      31.04 r
+  U2430/Y (OR2X2)                                         0.20      31.24 r
+  U1703/Y (OR3XL)                                         0.21      31.45 r
+  U2433/Y (OR2X2)                                         0.36      31.81 r
+  U1157/Y (INVX1)                                         0.09      31.90 f
+  U1555/Y (INVX1)                                         0.39      32.29 r
+  U1784/Y (OAI222XL)                                      0.26      32.55 f
+  YiWi_buf_5_reg[4]/D (DFFRHQX1)                          0.00      32.55 f
+  data arrival time                                                 32.55
+
+  clock clk (rise edge)                                  33.00      33.00
+  clock network delay (ideal)                             0.00      33.00
+  YiWi_buf_5_reg[4]/CK (DFFRHQX1)                         0.00      33.00 r
+  library setup time                                     -0.39      32.61
+  data required time                                                32.61
+  --------------------------------------------------------------------------
+  data required time                                                32.61
+  data arrival time                                                -32.55
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: Wi_buf_2_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: YiWi_buf_5_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Wi_buf_2_reg[1]/CK (DFFRHQX1)                           0.00       0.00 r
+  Wi_buf_2_reg[1]/Q (DFFRHQX1)                            0.53       0.53 r
+  U1284/Y (INVX1)                                         0.20       0.73 f
+  U2437/Y (OR2X2)                                         0.24       0.98 f
+  U1137/Y (OAI21XL)                                       0.13       1.10 r
+  U1138/Y (XOR2X1)                                        0.32       1.42 r
+  U1145/Y (INVX1)                                         0.08       1.50 f
+  U2445/Y (XOR3X2)                                        0.47       1.97 f
+  U1198/Y (INVX1)                                         0.12       2.09 r
+  U1183/Y (XOR3X2)                                        0.68       2.77 r
+  U1199/Y (INVX1)                                         0.09       2.86 f
+  U2478/Y (OR2X2)                                         0.20       3.06 f
+  U1662/Y (OAI21XL)                                       0.14       3.20 r
+  U1646/Y (OAI21XL)                                       0.13       3.33 f
+  U1645/Y (OAI2BB1X1)                                     0.14       3.47 r
+  U1707/Y (OAI21XL)                                       0.11       3.58 f
+  U1706/Y (OAI2BB1X1)                                     0.15       3.73 r
+  U1301/Y (OAI2BB1X1)                                     0.24       3.97 r
+  U1144/Y (OAI2BB1X1)                                     0.24       4.21 r
+  U1593/Y (INVX1)                                         0.07       4.27 f
+  U1592/Y (OR3XL)                                         0.39       4.67 f
+  U1276/Y (OR3XL)                                         0.41       5.07 f
+  U1644/Y (OR3XL)                                         0.37       5.45 f
+  U1136/Y (NAND2BX1)                                      0.21       5.66 f
+  U1642/Y (NAND2BX1)                                      0.20       5.86 f
+  U1705/Y (XNOR2X1)                                       0.26       6.12 r
+  div_622/a[14] (top_DW_div_uns_13)                       0.00       6.12 r
+  div_622/U35/Y (OAI21XL)                                 0.10       6.21 f
+  div_622/U34/Y (INVX1)                                   0.25       6.47 r
+  div_622/U358/Y (NOR2X1)                                 0.09       6.56 f
+  div_622/U36/Y (MXI2X1)                                  0.20       6.76 r
+  div_622/U18/Y (AND2X2)                                  0.18       6.94 r
+  div_622/U17/Y (NAND2X1)                                 0.11       7.04 f
+  div_622/U284/Y (INVX1)                                  0.25       7.29 r
+  div_622/U351/Y (MXI2X1)                                 0.26       7.55 f
+  div_622/U2/Y (INVX1)                                    0.19       7.74 r
+  div_622/U110/Y (NAND2BXL)                               0.09       7.83 f
+  div_622/U16/Y (INVX1)                                   0.12       7.96 r
+  div_622/U108/Y (AOI22XL)                                0.14       8.10 f
+  div_622/U27/Y (NAND2X1)                                 0.25       8.35 r
+  div_622/U283/Y (NOR2X1)                                 0.11       8.46 f
+  div_622/U292/Y (OAI21XL)                                0.23       8.69 r
+  div_622/U41/Y (AOI21X1)                                 0.10       8.79 f
+  div_622/U15/Y (OAI21XL)                                 0.19       8.98 r
+  div_622/U14/Y (NAND2X1)                                 0.14       9.12 f
+  div_622/U238/Y (INVX1)                                  0.22       9.34 r
+  div_622/U279/Y (MXI2X1)                                 0.26       9.60 r
+  div_622/U4/Y (INVX1)                                    0.13       9.73 f
+  div_622/U63/Y (NAND2BXL)                                0.16       9.89 r
+  div_622/U225/Y (INVX1)                                  0.10       9.99 f
+  div_622/U112/Y (AOI22XL)                                0.27      10.26 r
+  div_622/U26/Y (NAND2X1)                                 0.21      10.47 f
+  div_622/u_div/u_add_PartRem_1_4_2/A[2] (top_DW01_add_204)
+                                                          0.00      10.47 f
+  div_622/u_div/u_add_PartRem_1_4_2/U61/Y (NOR2XL)        0.25      10.72 r
+  div_622/u_div/u_add_PartRem_1_4_2/U83/Y (OAI21XL)       0.12      10.84 f
+  div_622/u_div/u_add_PartRem_1_4_2/U82/Y (AOI21X1)       0.23      11.08 r
+  div_622/u_div/u_add_PartRem_1_4_2/U54/Y (OAI21XL)       0.12      11.20 f
+  div_622/u_div/u_add_PartRem_1_4_2/U71/Y (BUFX3)         0.19      11.39 f
+  div_622/u_div/u_add_PartRem_1_4_2/CO (top_DW01_add_204)
+                                                          0.00      11.39 f
+  div_622/U237/Y (MXI2X1)                                 0.19      11.57 f
+  div_622/U6/Y (INVX1)                                    0.18      11.75 r
+  div_622/U51/Y (AND2X1)                                  0.32      12.07 r
+  div_622/U160/Y (AOI21XL)                                0.12      12.20 f
+  div_622/U31/Y (OAI2BB1X1)                               0.27      12.47 r
+  div_622/u_div/u_add_PartRem_0_3_2/A[0] (top_DW01_add_207)
+                                                          0.00      12.47 r
+  div_622/u_div/u_add_PartRem_0_3_2/U92/Y (NOR2X1)        0.09      12.56 f
+  div_622/u_div/u_add_PartRem_0_3_2/U62/Y (OAI21XL)       0.24      12.80 r
+  div_622/u_div/u_add_PartRem_0_3_2/U74/Y (AOI21XL)       0.21      13.01 f
+  div_622/u_div/u_add_PartRem_0_3_2/U65/Y (OAI21X1)       0.21      13.22 r
+  div_622/u_div/u_add_PartRem_0_3_2/U66/Y (BUFX4)         0.18      13.40 r
+  div_622/u_div/u_add_PartRem_0_3_2/CO (top_DW01_add_207)
+                                                          0.00      13.40 r
+  div_622/U7/Y (MXI2X1)                                   0.20      13.59 f
+  div_622/U222/Y (INVX1)                                  0.21      13.80 r
+  div_622/U50/Y (NAND2XL)                                 0.15      13.95 f
+  div_622/U210/Y (INVX1)                                  0.16      14.12 r
+  div_622/U356/Y (AOI22X1)                                0.09      14.20 f
+  div_622/U354/Y (OAI2BB1X1)                              0.24      14.45 r
+  div_622/u_div/u_add_PartRem_0_2_2/A[0] (top_DW01_add_210)
+                                                          0.00      14.45 r
+  div_622/u_div/u_add_PartRem_0_2_2/U89/Y (NOR2X1)        0.09      14.54 f
+  div_622/u_div/u_add_PartRem_0_2_2/U64/Y (OAI21XL)       0.26      14.79 r
+  div_622/u_div/u_add_PartRem_0_2_2/U67/Y (AOI21X1)       0.16      14.96 f
+  div_622/u_div/u_add_PartRem_0_2_2/U63/Y (OAI21XL)       0.21      15.17 r
+  div_622/u_div/u_add_PartRem_0_2_2/U62/Y (BUFX3)         0.21      15.37 r
+  div_622/u_div/u_add_PartRem_0_2_2/CO (top_DW01_add_210)
+                                                          0.00      15.37 r
+  div_622/U22/Y (MXI2X2)                                  0.20      15.57 f
+  div_622/U223/Y (INVX1)                                  0.21      15.78 r
+  div_622/U48/Y (NAND2XL)                                 0.15      15.93 f
+  div_622/U211/Y (INVX1)                                  0.16      16.09 r
+  div_622/U361/Y (AOI22X1)                                0.09      16.18 f
+  div_622/U359/Y (OAI2BB1X1)                              0.24      16.42 r
+  div_622/u_div/u_add_PartRem_0_1_2/A[0] (top_DW01_add_213)
+                                                          0.00      16.42 r
+  div_622/u_div/u_add_PartRem_0_1_2/U71/Y (NOR2XL)        0.12      16.53 f
+  div_622/u_div/u_add_PartRem_0_1_2/U65/Y (OAI21X1)       0.21      16.74 r
+  div_622/u_div/u_add_PartRem_0_1_2/U69/Y (AOI21XL)       0.19      16.93 f
+  div_622/u_div/u_add_PartRem_0_1_2/U63/Y (OAI21XL)       0.22      17.15 r
+  div_622/u_div/u_add_PartRem_0_1_2/U62/Y (BUFX3)         0.20      17.35 r
+  div_622/u_div/u_add_PartRem_0_1_2/CO (top_DW01_add_213)
+                                                          0.00      17.35 r
+  div_622/U13/Y (MXI2X1)                                  0.23      17.58 f
+  div_622/U224/Y (INVX1)                                  0.20      17.77 r
+  div_622/U214/Y (NAND2BX1)                               0.07      17.85 f
+  div_622/U24/Y (INVX1)                                   0.19      18.04 r
+  div_622/U170/Y (AOI22XL)                                0.15      18.19 f
+  div_622/U167/Y (OAI211XL)                               0.34      18.54 r
+  div_622/u_div/u_add_PartRem_0_0_2/A[3] (top_DW01_add_216)
+                                                          0.00      18.54 r
+  div_622/u_div/u_add_PartRem_0_0_2/U74/Y (NOR2XL)        0.10      18.63 f
+  div_622/u_div/u_add_PartRem_0_0_2/U73/Y (NOR2XL)        0.16      18.80 r
+  div_622/u_div/u_add_PartRem_0_0_2/U78/Y (NAND2X1)       0.07      18.87 f
+  div_622/u_div/u_add_PartRem_0_0_2/U63/Y (OAI21XL)       0.29      19.16 r
+  div_622/u_div/u_add_PartRem_0_0_2/CO (top_DW01_add_216)
+                                                          0.00      19.16 r
+  div_622/U64/Y (MX2X1)                                   0.29      19.45 f
+  div_622/quotient[0] (top_DW_div_uns_13)                 0.00      19.45 f
+  U1556/Y (BUFX3)                                         0.25      19.70 f
+  sub_700/A[0] (top_DW01_sub_3)                           0.00      19.70 f
+  sub_700/U1/Y (INVXL)                                    0.11      19.81 r
+  sub_700/U2/Y (NAND2BX1)                                 0.08      19.89 f
+  sub_700/U2_1/CO (ADDFX2)                                0.34      20.23 f
+  sub_700/U2_2/CO (CMPR32X1)                              0.33      20.56 f
+  sub_700/U2_3/CO (CMPR32X1)                              0.33      20.89 f
+  sub_700/U2_4/CO (CMPR32X1)                              0.33      21.22 f
+  sub_700/U2_5/CO (ADDFXL)                                0.34      21.56 f
+  sub_700/U2_6/CO (CMPR32X1)                              0.35      21.90 f
+  sub_700/U2_7/Y (XOR3X2)                                 0.26      22.17 r
+  sub_700/DIFF[7] (top_DW01_sub_3)                        0.00      22.17 r
+  U1256/Y (MX2X1)                                         0.24      22.40 r
+  mult_726/b[7] (top_DW_mult_uns_12)                      0.00      22.40 r
+  mult_726/U117/Y (INVX1)                                 0.14      22.54 f
+  mult_726/U121/Y (NOR2X1)                                0.19      22.72 r
+  mult_726/U19/S (CMPR42X1)                               0.94      23.66 f
+  mult_726/U72/S (CMPR32X1)                               0.51      24.17 f
+  mult_726/product[8] (top_DW_mult_uns_12)                0.00      24.17 f
+  add_735/A[8] (top_DW01_add_42_DW01_add_22)              0.00      24.17 f
+  add_735/U1_8/CO (ADDFX2)                                0.51      24.68 f
+  add_735/U1_9/CO (CMPR32X1)                              0.33      25.01 f
+  add_735/U1_10/CO (ADDFX2)                               0.35      25.36 f
+  add_735/U1_11/CO (ADDFX2)                               0.35      25.70 f
+  add_735/U1_12/CO (ADDFX2)                               0.35      26.05 f
+  add_735/U1_13/CO (ADDFX2)                               0.35      26.40 f
+  add_735/U1_14/CO (CMPR32X1)                             0.33      26.73 f
+  add_735/U1_15/CO (ADDFX2)                               0.36      27.09 f
+  add_735/SUM[16] (top_DW01_add_42_DW01_add_22)           0.00      27.09 f
+  gte_776/B[36] (top_DW_cmp_2)                            0.00      27.09 f
+  gte_776/U245/Y (NAND2BX1)                               0.23      27.32 f
+  gte_776/U212/Y (AOI32X1)                                0.30      27.62 r
+  gte_776/U207/Y (INVX1)                                  0.07      27.69 f
+  gte_776/U244/Y (AOI31X1)                                0.16      27.85 r
+  gte_776/U192/Y (AOI31XL)                                0.08      27.92 f
+  gte_776/U187/Y (INVX1)                                  0.47      28.40 r
+  gte_776/GE_LT_GT_LE (top_DW_cmp_2)                      0.00      28.40 r
+  U1648/Y (INVX1)                                         0.14      28.53 f
+  U1595/Y (INVX1)                                         0.61      29.14 r
+  U1937/Y (MX2X1)                                         0.41      29.55 f
+  gte_787/B[17] (top_DW_cmp_J3_0)                         0.00      29.55 f
+  gte_787/U318/Y (NOR2X1)                                 0.16      29.71 r
+  gte_787/U308/Y (OAI21XL)                                0.11      29.82 f
+  gte_787/U306/Y (AOI21X1)                                0.17      29.99 r
+  gte_787/U195/Y (OAI21XL)                                0.13      30.12 f
+  gte_787/U300/Y (AOI21X1)                                0.15      30.27 r
+  gte_787/U190/Y (OAI21XL)                                0.12      30.39 f
+  gte_787/U191/Y (AOI21X1)                                0.30      30.70 r
+  gte_787/GE_LT_GT_LE (top_DW_cmp_J3_0)                   0.00      30.70 r
+  U1147/Y (INVX1)                                         0.07      30.76 f
+  U1357/Y (NOR3XL)                                        0.28      31.04 r
+  U2430/Y (OR2X2)                                         0.20      31.24 r
+  U1703/Y (OR3XL)                                         0.21      31.45 r
+  U2433/Y (OR2X2)                                         0.36      31.81 r
+  U1157/Y (INVX1)                                         0.09      31.90 f
+  U1555/Y (INVX1)                                         0.39      32.29 r
+  U1781/Y (OAI222XL)                                      0.26      32.55 f
+  YiWi_buf_5_reg[1]/D (DFFRHQX1)                          0.00      32.55 f
+  data arrival time                                                 32.55
+
+  clock clk (rise edge)                                  33.00      33.00
+  clock network delay (ideal)                             0.00      33.00
+  YiWi_buf_5_reg[1]/CK (DFFRHQX1)                         0.00      33.00 r
+  library setup time                                     -0.39      32.61
+  data required time                                                32.61
+  --------------------------------------------------------------------------
+  data required time                                                32.61
+  data arrival time                                                -32.55
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+1

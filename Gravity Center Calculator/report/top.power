@@ -1,0 +1,49 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : top
+Version: R-2020.09-SP5
+Date   : Thu Jan  8 16:45:22 2026
+****************************************
+
+
+Library(s) Used:
+
+    slow (File: /home/m110/m110061576/process/CBDK_TSMC018_Arm_f1.0/CIC/SynopsysDC/db/slow.db)
+
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.62 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 991.2922 uW   (71%)
+  Net Switching Power  = 413.2216 uW   (29%)
+                         ---------
+Total Dynamic Power    =   1.4045 mW  (100%)
+
+Cell Leakage Power     =   5.1363 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.5283        9.2332e-03        6.2840e+05            0.5382  (  38.18%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.4629            0.4040        4.5079e+06            0.8714  (  61.82%)
+--------------------------------------------------------------------------------------------------
+Total              0.9913 mW         0.4132 mW     5.1363e+06 pW         1.4096 mW
+1

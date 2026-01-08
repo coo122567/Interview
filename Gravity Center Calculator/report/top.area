@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : top
+Version: R-2020.09-SP5
+Date   : Thu Jan  8 16:45:21 2026
+****************************************
+
+Library(s) Used:
+
+    slow (File: /home/m110/m110061576/process/CBDK_TSMC018_Arm_f1.0/CIC/SynopsysDC/db/slow.db)
+
+Number of ports:                         3086
+Number of nets:                         11481
+Number of cells:                         8539
+Number of combinational cells:           8079
+Number of sequential cells:               284
+Number of macros/black boxes:               0
+Number of buf/inv:                       1884
+Number of references:                     112
+
+Combinational area:             123575.761975
+Buf/Inv area:                    12962.980960
+Noncombinational area:           19865.260971
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                143441.022946
+Total area:                 undefined
+1
