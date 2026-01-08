@@ -10,12 +10,21 @@ Designed a Gravity Center Calculator with rounding and farthest-point replacemen
 Optimized the architecture(multiplier reuse) for 3% area reduction. 
 
 ### Block diagram
+<img width="1922" height="1008" alt="image" src="https://github.com/user-attachments/assets/8b8c3ba8-e870-4418-b1b0-c566931ba0d9" />
 
 
 ### Specifications
+- Clock periods: CLK = 33ns
+- Functions: Maintains up to 6 weighted points (Xi, Yi, Wi) and outputs the rounded weighted center (Xc, Yc). When the buffer is full, each new incoming point replaces the stored point farthest from the current center.
 
 
 ## Simulation Results
+  - Performs calculation when `READY_` is asserted.
+<img width="2000" height="218" alt="image" src="https://github.com/user-attachments/assets/10b11c4f-4be1-41f3-a9c2-ab22319f707a" />
 
+  - Architecture Optimized
+    
 
 ### Comparison
+  - Area: 3% reduction (baseline vs. multiplier-reuse optimized design).
+<img width="1475" height="269" alt="image" src="https://github.com/user-attachments/assets/657bec24-19df-4350-b4be-fdf29538f772" />
