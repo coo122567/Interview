@@ -26,7 +26,7 @@ Optimized the architecture(multiplier reuse) for 3% area reduction.
 
 
   - Architecture Optimized
-    Baseline recomputes all six Xi·Wi and Yi·Wi products every cycle (12 multiplications). I cache the products in a 6-entry window and update only on shift/replace, reducing weighted-sum multipliers from 12 to 2.
+    Baseline recomputes all six Xi·Wi and Yi·Wi products every cycle (12 multiplications). I cache the products in a 6-entry buffers and update only on shift/replace, reducing weighted-sum multipliers from 12 to 2.
 
 ### Comparison
   - Area: 3% reduction (baseline vs. multiplier-reuse optimized design).
