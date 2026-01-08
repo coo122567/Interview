@@ -10,7 +10,7 @@ Designed a Gravity Center Calculator with rounding and farthest-point replacemen
 Optimized the architecture(multiplier reuse) for 3% area reduction. 
 
 ### Block diagram
-<img width="2145"  alt="image" src="https://github.com/user-attachments/assets/fcf12a53-5372-4c85-8ee6-a807f41a56c1" />
+<img width="1600"  alt="image" src="https://github.com/user-attachments/assets/fcf12a53-5372-4c85-8ee6-a807f41a56c1" />
 
 
 
@@ -30,4 +30,5 @@ Optimized the architecture(multiplier reuse) for 3% area reduction.
 
 ### Comparison
   - Area: 3% reduction (baseline vs. multiplier-reuse optimized design).
-<img width="1475" height="269" alt="image" src="https://github.com/user-attachments/assets/657bec24-19df-4350-b4be-fdf29538f772" />
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/76341082-954f-4708-8549-e7bb2db7b9c8" />
+
