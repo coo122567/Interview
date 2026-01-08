@@ -10,7 +10,7 @@ Designed a Gravity Center Calculator with rounding and farthest-point replacemen
 Optimized the architecture(multiplier reuse) for 3% area reduction. 
 
 ### Block diagram
-<img width="1922" height="1008" alt="image" src="https://github.com/user-attachments/assets/8b8c3ba8-e870-4418-b1b0-c566931ba0d9" />
+<img width="1922" alt="image" src="https://github.com/user-attachments/assets/8b8c3ba8-e870-4418-b1b0-c566931ba0d9" />
 
 
 ### Specifications
@@ -23,7 +23,7 @@ Optimized the architecture(multiplier reuse) for 3% area reduction.
 <img width="2000" height="218" alt="image" src="https://github.com/user-attachments/assets/10b11c4f-4be1-41f3-a9c2-ab22319f707a" />
 
   - Architecture Optimized
-    
+    Baseline recomputes all six Xi·Wi and Yi·Wi products every cycle (12 multiplications). I cache the products in a 6-entry window and update only on shift/replace, reducing weighted-sum multipliers from 12 to 2.
 
 ### Comparison
   - Area: 3% reduction (baseline vs. multiplier-reuse optimized design).
