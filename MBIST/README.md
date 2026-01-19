@@ -5,8 +5,8 @@
 - Implemented DFT and generated ATPG patterns to validate the MBIST logic and ensure testability.
 
 ## Introduction
-Designed MBIST using the March X algorithm to detect common SRAM fault models(Stuck-at fault).
-Implemented DFT and generated ATPG patterns to validate the MBIST logic and ensure testability.
+- Designed MBIST using the March X algorithm to detect common SRAM fault models(Stuck-at fault).
+- Implemented DFT and generated ATPG patterns to validate the MBIST logic and ensure testability.
 
 ### Block diagram
 <img width="1400" alt="image" src="https://github.com/user-attachments/assets/8f4775f7-a296-40f5-a99e-2f0739e2cb4d" />
