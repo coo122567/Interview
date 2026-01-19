@@ -1,0 +1,9 @@
+./testbench/testbench.v
+./testbench/memory.v
+./testbench/mode_mux.v
+./rtl/top.v
+./rtl/bist_controller.v
+./rtl/bist_buf.v
+./rtl/bist_addr_gen.v
+./rtl/bist_pat_gen.v
+./rtl/bist_cmp.v
