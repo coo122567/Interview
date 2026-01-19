@@ -24,6 +24,7 @@
 ## Simulation Results
   - Performs test when `bist_start` is asserted.
   - Pass case: SRAM without injected fault.
+<img width="1500" alt="image" src="https://github.com/user-attachments/assets/28a2848c-13bc-4226-a7b0-4493070fc25d" />
 
 
   - Fail case: Inject a stuck-at-1 fault to bit #1 of the SRAM word #5
@@ -44,6 +45,7 @@
 
 
 - Fault summary
+
   <img width="400" alt="image" src="https://github.com/user-attachments/assets/6f50e7a0-ca30-42f5-97db-8ac59880adee" />
 
 ### Comparison
