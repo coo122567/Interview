@@ -15,20 +15,16 @@ Implemented DFT and generated ATPG patterns to validate the MBIST logic and ensu
 
 ### Specifications
 - Clock periods: clk = 10ns
-- Functions: Maintains up to 6 weighted points (Xi, Yi, Wi) and outputs the rounded weighted center (Xc, Yc). When the buffer is full, each new incoming point replaces the stored point farthest from the current center.
+- Functions: .
 
 
 ## Simulation Results
-  - Performs calculation when `READY_` is asserted.
+  - Performs test when `bist_start` is asserted.
 <img width="2000" height="218" alt="image" src="https://github.com/user-attachments/assets/10b11c4f-4be1-41f3-a9c2-ab22319f707a" />
 
 
-
-  - Architecture Optimized
-    Baseline recomputes all six Xi·Wi and Yi·Wi products every cycle (12 multiplications). I cache the products in a 6-entry buffers and update only on shift/replace, reducing weighted-sum multipliers from 12 to 2.
-
 ### Comparison
-  - Area: 3% reduction (baseline vs. multiplier-reuse optimized design).
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/76341082-954f-4708-8549-e7bb2db7b9c8" />
+  - Scan chain: 10% area overhead, but design can detect to manufacturing defects. (design w/o scan chain vs. design w/ scan chain).
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/613ec2da-1658-4d93-9569-5625ad4f22b8" />
 
 
