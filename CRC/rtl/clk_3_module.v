@@ -1,0 +1,65 @@
+//////////////////////////////////////////////////
+//
+// Module Name: clk_3_module.v
+// 
+// Author	  : Jamie Jhang
+//
+// Description: output result in clk3 clock domain
+//
+//////////////////////////////////////////////////
+`timescale 1ns/1ps
+
+
+module clk_3_module (
+	input  wire		   clk_3,
+	input  wire		   rst_n,
+
+	input  wire	[59:0] clk2_out,
+	input  wire		   clk2_flag,
+
+	output wire 	   out_valid,
+	output wire [59:0] out
+);
+
+
+//---------------------------------------------------------------------
+// PARAMETER DECLARATION
+//---------------------------------------------------------------------
+reg 	   out_valid_reg;
+reg [59:0] out_reg; 		
+
+wire sync_clk2_lvl;
+wire sync_clk2_pls;
+
+// 2-ff synchronizer
+cdc_sync2 i_cdc_sync2_clk3 (
+	.clk  (clk_3),
+	.rst_n(rst_n),
+	.d    (clk2_flag),
+	.q    (sync_clk2_lvl)
+);
+
+// pulse generator
+plsgen i_plsgen_clk3 (
+	.clk  (clk_3),
+	.rst_n(rst_n),
+	.d    (sync_clk2_lvl),
+	.pls  (sync_clk2_pls)
+);
+
+
+always @(posedge clk_3 or negedge rst_n) begin
+  if(!rst_n) 			 out_valid_reg <= 1'b0;
+  else if(sync_clk2_pls) out_valid_reg <= 1'b1;
+  else 					 out_valid_reg <= 1'b0;
+end
+assign out_valid = out_valid_reg;
+
+always @(posedge clk_3 or negedge rst_n) begin
+  if(!rst_n) 			 out_reg <= 60'd0;
+  else if(sync_clk2_pls) out_reg <= clk2_out;
+  else 					 out_reg <= 60'd0;
+end
+assign out = out_reg;
+
+endmodule
