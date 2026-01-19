@@ -2,7 +2,7 @@
 ## Highlights
 - Designed MBIST using the March X algorithm to detect common SRAM fault models.
 - Verified with RTL and Gate-Level simulations.
-- Implemented DFT and generated ATPG patterns to validate the MBIST logic and ensure testability.
+- Inserted scan chain and generated ATPG patterns to validate the MBIST logic and ensure testability.
 
 ## Introduction
 - Implemented March X algorithm : { ↕(w0); ↑(r0, w1); ↓(r1, w0); ↕(r0) }.
@@ -16,7 +16,7 @@
 
 
 ### Specifications
-- Clock periods: clk = 10ns
+- Clock periods: clk = 10 ns
 - March algorithm: March X
 - Target faults: stuck-at faults (e.g., SA0/SA1)
 
@@ -32,6 +32,9 @@
 
 ## DFT & ATPG
 - Purpose: Inserted scan chain into MBIST logic to detect manufacturing defects.
+- Fault summary
+
+  <img width="400" alt="image" src="https://github.com/user-attachments/assets/6f50e7a0-ca30-42f5-97db-8ac59880adee" />
 - Pattern simulation(Pass case): Run VCS pattern simulation with ATPG patterns w/o fault injection.
    
   <img width="600" alt="image" src="https://github.com/user-attachments/assets/8391b28d-0558-4e38-b591-10de4887bc5f" />
@@ -44,12 +47,9 @@
   <img width="600" alt="image" src="https://github.com/user-attachments/assets/cdb49339-d601-4654-b905-bd403a0fab32" />
 
 
-- Fault summary
-
-  <img width="400" alt="image" src="https://github.com/user-attachments/assets/6f50e7a0-ca30-42f5-97db-8ac59880adee" />
 
 ### Comparison
-  - Scan chain: 10% area overhead, but enable ATPG-based testing to detect manufacturing defects. (w/o scan chain vs. w/ scan chain).
+  - Scan chain: 10% area overhead, but enables ATPG-based testing to detect manufacturing defects. (w/o scan chain vs. w/ scan chain).
   <img width="600" alt="image" src="https://github.com/user-attachments/assets/613ec2da-1658-4d93-9569-5625ad4f22b8" />
 
 
