@@ -15,16 +15,21 @@ Implemented DFT and generated ATPG patterns to validate the MBIST logic and ensu
 
 ### Specifications
 - Clock periods: clk = 10ns
-- Functions: .
+- Functions: MBIST using the March X algorithm to detect common SRAM fault models(Stuck-at fault).
+- March X algorithm : 
 
 
 ## Simulation Results
   - Performs test when `bist_start` is asserted.
-<img width="2000" height="218" alt="image" src="https://github.com/user-attachments/assets/10b11c4f-4be1-41f3-a9c2-ab22319f707a" />
+  - MBIST test SRAM w/o stuck-at fault.
 
+  - MBIST test SRAM w/ stuck-at fault, inject a stuck-at-1 falut to bit #1 of the SRAM word #5
+
+## DFT & ATPG
+- Functions: Insert scan chain in MBIST logic to detect manufacturing defects.
 
 ### Comparison
-  - Scan chain: 10% area overhead, but design can detect to manufacturing defects. (design w/o scan chain vs. design w/ scan chain).
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/613ec2da-1658-4d93-9569-5625ad4f22b8" />
+  - Scan chain: 10% area overhead, but enable ATPG-based testing to detect manufacturing defects. (w/o scan chain vs. w/ scan chain).
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/613ec2da-1658-4d93-9569-5625ad4f22b8" />
 
 
