@@ -1,0 +1,5 @@
+current_design top
+
+clock -name clk -period 10 -edge {0  5}
+reset -name rst_n -value 0 
+
