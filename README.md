@@ -1,2 +1,4 @@
-# Interview
-Projects for interview
+# Interview Projects (Digital IC Design)
+
+This repo contains my interview-ready digital IC design projects.  
+Each project folder includes RTL, testbenches, and synthesis Tcl scripts.
