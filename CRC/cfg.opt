@@ -1,0 +1,2 @@
+instance {testbed.i_top.i_pulse_sync_clk1.i_cdc_sync.sync_ff_reg_0_} {noTiming};
+instance {testbed.i_top.i_pulse_sync_clk2.i_cdc_sync.sync_ff_reg_0_} {noTiming};
