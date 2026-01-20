@@ -11,7 +11,9 @@ Optimized the architecture(Unfolding-2) for 46% latency reduction.
 
 ### Block diagram
   
-  <img width="800" alt="image" src="https://github.com/user-attachments/assets/70473ad4-21e4-4a42-a1c4-3d64075c66c1" />
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/73642b6d-2fb0-401d-a372-fb9d7bc19c87" />
+
+
 
 
 ### Specifications
