@@ -1,0 +1,12 @@
+./testbench/testbed.v
+./testbench/pattern.v
+./rtl/top.v
+./rtl/cdc_sync.v
+./rtl/plsgen.v
+./rtl/toggleff.v
+./rtl/crc_step.v
+./rtl/rst_sync.v
+./rtl/pulse_sync.v
+./rtl/clk_1_module.v
+./rtl/clk_2_module.v
+./rtl/clk_3_module.v
