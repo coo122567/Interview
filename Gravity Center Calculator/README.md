@@ -3,11 +3,11 @@
 ## Highlights
 - Designed a Gravity Center Calculator with rounding and farthest-point replacement.
 - Verified with RTL and Gate-Level simulations.
-- Achieved a 3% Area reduction via multiplier reuse.
+- Achieved a 436 gate counts reduction via multiplier reuse.
 
 ## Introduction
 Designed a Gravity Center Calculator with rounding and farthest-point replacement in Verilog and synthesized it with Design Compiler.
-Optimized the architecture(multiplier reuse) for 3% area reduction. 
+Optimized the architecture(multiplier reuse) for reduced 436 gate counts. 
 
 ### Block diagram
 <img width="1600"  alt="image" src="https://github.com/user-attachments/assets/fcf12a53-5372-4c85-8ee6-a807f41a56c1" />
@@ -29,6 +29,7 @@ Optimized the architecture(multiplier reuse) for 3% area reduction.
     Baseline recomputes all six Xi·Wi and Yi·Wi products every cycle (12 multiplications). I cache the products in a 6-entry buffers and update only on shift/replace, reducing weighted-sum multipliers from 12 to 2.
 
 ### Comparison
-  - Area: 3% reduction (baseline vs. multiplier-reuse optimized design).
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/76341082-954f-4708-8549-e7bb2db7b9c8" />
+  - Area: reduced 436 gate counts (baseline vs. multiplier-reuse optimized design).
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/1476df55-df5d-42d7-a055-aa3509032c57" />
+
 
