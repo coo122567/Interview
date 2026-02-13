@@ -1,0 +1,7 @@
+current_design top
+
+clock -name clk_1 -period 14.1 -edge {0  7.05}
+clock -name clk_2 -period 2.5  -edge {0  1.25}
+clock -name clk_3 -period 2.7  -edge {0  1.35}
+reset -name rst_n -value 0 
+
