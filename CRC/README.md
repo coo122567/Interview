@@ -72,6 +72,7 @@ Optimized the architecture(Unfolding-2) for 46% latency reduction.
 
 ### Comparison
   - Latency definition: `in_valid` asserted → `out_valid` asserted (measured in **clk3 cycles**).
+
     <img width="600" alt="image" src="https://github.com/user-attachments/assets/ec45627b-f99b-40ae-ab2e-43f9f5fa722a" />
 
 
