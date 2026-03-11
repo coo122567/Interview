@@ -29,6 +29,7 @@ Optimized the architecture(Unfolding-2) for 46% latency reduction.
 
 
 
+
 - Architecture Optimized
   - Base CRC step(design compiler)
     <img width="800" alt="image" src="https://github.com/user-attachments/assets/a19ea9a9-507e-445d-9aad-345708482868" />
@@ -71,7 +72,7 @@ Optimized the architecture(Unfolding-2) for 46% latency reduction.
 
 ### Comparison
   - Latency definition: `in_valid` asserted → `out_valid` asserted (measured in **clk3 cycles**).
-  <img width="600" alt="image" src="https://github.com/user-attachments/assets/199f2b2c-c687-4236-ac29-27f7e34549a1" />
+    <img width="600" alt="image" src="https://github.com/user-attachments/assets/ec45627b-f99b-40ae-ab2e-43f9f5fa722a" />
 
 
 
